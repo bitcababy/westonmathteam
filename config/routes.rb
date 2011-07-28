@@ -13,7 +13,8 @@ Westonmathteam::Application.routes.draw do
   # Sample resource route (maps HTTP verbs to controller actions automatically):
   #   resources :products
 
-	resources :problems
+	resources :problems, :only=>:index
+  root :to => "problems#index"
 
   # Sample resource route with options:
   #   resources :products do
