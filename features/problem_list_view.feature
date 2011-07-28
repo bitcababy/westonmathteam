@@ -5,7 +5,7 @@ Feature: The problem list view
 		 | problem | solution | year | meet | round | number |
 		 | foo     | bar      | 1991 | 3    | 1     | 1      |
 		 | foobie  | bletch   | 1991 | 3    | 1     | 2      |
-		When I go to the problems page
+		When I view the problems table
 		Then I should see the following headers
 		 | header   |
 		 | Problem  |
