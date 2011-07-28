@@ -11,3 +11,18 @@
 		%tbody
 			= render :partial=>'problem_row', :collection=>@problems
 		%tfoot
+
+:javascript
+	$(document).ready(function() {
+		$('#problems').dataTable( {
+			"aaSorting": [[ 3, "desc"]],
+			"bStateSave": true,
+			"bJQueryUI": true,
+			"bLengthChange": true,
+			"aLengthMenu": [10,15,20],
+			"iDisplayLength": 10,
+			"sPaginationType": "full_numbers"
+		} );
+	});
+
+
