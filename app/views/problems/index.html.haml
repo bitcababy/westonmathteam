@@ -1,0 +1,13 @@
+%div#problem-table
+	%table#problems
+		%thead
+			%tr
+				%th#problem Problem
+				%th#solution Solution
+				%th#year Year
+				%th#meet Meet
+				%th#round Round
+				%th#number Number
+		%tbody
+			= render :partial=>'problem_row', :collection=>@problems
+		%tfoot
