@@ -9,7 +9,7 @@
 				%th#round Round
 				%th#number Number
 		%tbody
-			= render :partial=>'problem_row', :collection=>@problems
+			!= render :partial=>'problem_row', :collection=>@problems
 		%tfoot
 
 :javascript
