@@ -1,4 +1,4 @@
-Feature: Javascript features
+Feature: Datatables actions
 
 	~@javascript
 	Background:
@@ -8,17 +8,6 @@ Feature: Javascript features
 		 | foobie  | bletch   | 1991 | 3    | 1     | 2      |
 		And I'm viewing the problems table
 		
-	Scenario: General table structure
-	
-	Scenario: Clickable headings
-		Then I should see the following sortable headings
-		 | heading  |
-		 | Problem  |
-		 | Solution |
-		 | Year     |
-		 | Meet     |
-		 | Round    |
-		 | Number   |
 
 	@javascript
 	Scenario: Clicking on a sortable heading
@@ -26,5 +15,12 @@ Feature: Javascript features
 		Then I should see the following content
 		 | Problem | Solution | Year | Meet | Round | Number |
 		 | foobie  | bletch   | 1991 | 3    | 1     | 2      |
+		 | xfoo    | cbar     | 1992 | 4    | 2     | 2      |
+		
+	@javascript
+	Scenario: Search for a problem
+		When I enter "bar" in the search box
+		Then I should see the following content
+		 | Problem | Solution | Year | Meet | Round | Number |
 		 | xfoo    | cbar     | 1992 | 4    | 2     | 2      |
 		
