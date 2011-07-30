@@ -1,13 +1,13 @@
 %tr
 	%td{:align=>'left'}
-		&= problem_row.problem
+		!= problem_row.problem
 	%td{:align=>'left'}
-		&= problem_row.solution
+		!= problem_row.solution
 	%td{:align=>'right'}
-		= problem_row.year.to_s
+		!= problem_row.year.to_s
 	%td{:align=>'right'}
-		= problem_row.meet.to_s
+		!= problem_row.meet.to_s
 	%td{:align=>'right'}
-		= problem_row.round.to_s
+		!= problem_row.round.to_s
 	%td{:align=>'right'}
-		= problem_row.number.to_s
+		!= problem_row.number.to_s
