@@ -38,7 +38,7 @@ group :development, :test do
 	gem 'database_cleaner'
 	gem 'factory_girl_rails'
 	gem 'selenium-client'
-	# gem 'webrat'
+	gem 'webrat'
 	gem 'capybara'
 	gem 'ar_fixtures'
 	gem 'selenium'
