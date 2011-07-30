@@ -1,6 +1,6 @@
 class ProblemsController < ApplicationController
 	def index
-    @problems = Problem.all
+    @problems = Problem.problems_wo_images
 		
     respond_to do |format|
       format.html # index.html.haml
