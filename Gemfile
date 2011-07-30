@@ -38,6 +38,12 @@ group :development, :test do
 	gem 'database_cleaner'
 	gem 'factory_girl_rails'
 	gem 'selenium-client'
-	gem 'webrat'
+	# gem 'webrat'
+	gem 'capybara'
 	gem 'ar_fixtures'
+	gem 'selenium'
+	gem 'selenium-webdriver'
+	gem 'akephalos'
+	gem 'capybara-envjs'
+	gem 'capybara-envjs-fixes'
 end
